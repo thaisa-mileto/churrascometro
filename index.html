@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Churrascômetro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <h1>Saiba quanta comida e bebida vai precisar!</h1>
+      </div>
+
+      <div class="container-right">
+        <img src="img/churraslogo.png" alt="Logo" />
+        <label
+          >Quantidade de adultos
+          <input
+            id="adultos"
+            name="adultos"
+            type="number"
+            placeholder="Adultos"
+        /></label>
+        <label
+          >Quantidade de crianças
+          <input
+            id="criancas"
+            name="criancas"
+            type="number"
+            placeholder="Crianças"
+        /></label>
+        <label
+          >Duração do churrasco
+          <input
+            id="duracao"
+            name="duracao"
+            type="number"
+            placeholder="Duração (h)"
+        /></label>
+        <div class="botao-container">
+          <button class="botao" onclick="calcular()">Calcular</button>
+        </div>
+        <div id="resultado"></div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
